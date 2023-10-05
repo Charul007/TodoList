@@ -153,3 +153,10 @@ h1{
 
 }
 
+.bgc{
+  background: black;
+  color : white;
+  height: 110vh;
+  margin-top: -3vh;
+  padding-top: 10vh;
+}

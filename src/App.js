@@ -1,7 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import {FaCheck, FaTrashAlt } from "react-icons/fa";
-function App () {
+
+function App () 
+{
+
   const [allTodos, setAllTodos] = useState ([]);
   const [newTodoTitle, setNewTodoTitle] = useState ('');
   const [newDescription, setNewDescription] = useState ('');
@@ -83,10 +86,10 @@ function App () {
   };
 
   return (
-    <div className="App">
-      <h1>My Todos</h1>
+    <div className="App, bgc">
+      <h1>My Task For The Day</h1>
 
-      <div className="todo-wrapper">
+      <div className="todo-wrapper" style={{background:'black'}}>
 
         <div className="todo-input">
           <div className="todo-input-item">
@@ -122,7 +125,7 @@ function App () {
             className={`secondaryBtn ${isCompletedScreen === false && 'active'}`}
             onClick={() => setIsCompletedScreen (false)}
           >
-            To Do
+            Task To Do
           </button>
           <button
             className={`secondaryBtn ${isCompletedScreen === true && 'active'}`}
